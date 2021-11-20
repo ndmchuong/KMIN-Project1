@@ -1,0 +1,708 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Calibri;
+}
+header {
+    width: 100%;
+    height: 75px;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+}
+#logo {
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 400px;
+}
+.title {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #999999;
+    text-decoration: none;
+}
+.title2 {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #d5d5d5;
+    text-decoration: none;
+}
+.uu-dai {
+    color: #999999;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.lai-thu {
+    color: #999999;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#bt-50 {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #d5d5d5;
+}
+#thuong-hieu {
+    text-decoration: none;
+    color: #d5d5d5;
+
+}
+.title:hover {
+    color: white;
+}
+.uu-dai:hover {
+    color: white;
+}
+.lai-thu:hover {
+    color: white;
+}
+.title2:hover {
+    color: white;
+}
+#bt-50:hover {
+    color: white;
+}
+#thuong-hieu:hover {
+    color: white;
+}
+.top-title {
+    margin-top: 12px;
+    text-align: right;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+#bottom-title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    letter-spacing: 0.2em;
+}
+#menu {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #999999;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+.partition {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.menu-dropdown {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    display: block;
+    border: none;
+    background-color: #2b2b2b;
+    margin-bottom: 10px;
+}
+.menu-hover {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    background-color: #d9d9d9;
+    overflow: scroll;
+    display: none;
+    position: absolute;
+    top: 75px;
+    z-index: 2;
+    animation-name: tha-xuong;
+    animation-duration: 1s;
+}
+@keyframes tha-xuong {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 75px;
+    }
+}
+
+.menu-hover>p {
+    color: #999999;
+}
+.menu-hover-top-title {
+    margin-bottom: 30px;
+}
+.bottom-title-menu-hover {
+    display: block;
+    text-decoration: none;
+    line-height: 4em;
+    color: #999999;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+.bottom-title-menu-hover:hover {
+    color: #2b2b2b;
+}
+.san-pham-hover {
+    width: 100%;
+    height: 500px;
+    display: none;
+    overflow: scroll;
+    position: absolute;
+    top: 75px;
+    z-index: 2;
+    animation-name: tha-xuong;
+    animation-duration: 1s;
+    background-color: #FFFFFF;
+}
+.loc-chung-loai {
+    height: 50px;
+    background-color: #101010;
+    padding-top: 10px;
+}
+.loc-chung-loai>a {
+    color: #d5d5d5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.model-san-pham>div {
+    display: flex;
+}
+.model-san-pham>hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.chi-tiet-san-pham {
+    width: calc(100%/4);
+}
+.chi-tiet-san-pham>a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+.chi-tiet-san-pham>a>p {
+    text-align: center;
+}
+.link-lienhe-laithu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    
+}
+.link-lienhe-laithu>a {
+    text-decoration: none;
+    color: #999999;
+}
+.link-lienhe-laithu>a:hover {
+    color: black;
+}
+.hienthi {
+    display: block;
+}
+#bg-image {
+    width: 100%;
+    height: calc(100vw/3.2);
+    margin-top: 70px;
+    background-image: url("../img/line-up-02-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    animation-name: image-mazda;
+    animation-duration: 20s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes image-mazda {
+    0% {
+        background-image: url("../img/line-up-02-1.jpg");
+    }
+    20% {
+        background-image: url("../img/all-new-mazda3-sport_pc1.jpg");
+    }
+    40% {
+        background-image: url("../img/banner-web-05.jpg");
+    }
+    60% {
+        background-image: url("../img/banner-web-06.jpg");
+    }
+    80% {
+        background-image: url("../img/banner-web-07.jpg");
+    }
+    100% {
+        background-image: url("../img/line-up-02-1.jpg");
+    }
+
+}
+
+#section2 {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 5px 0px 5px;
+    background-color: #e7e7e7;
+}
+.article-overview {
+    width: calc(100%/3);
+    padding: 0px 5px;
+    display: block;
+}
+
+
+
+.link-overview {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.img-text-overview {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+}
+.img-text-overview2 {
+    height: 120px;
+}
+#img-wrapper1 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/all-new-mazda3.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 3s;
+}
+#img-wrapper2 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/all-new-mazda3-sport.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 3s;
+}
+#img-wrapper3 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/new-mazda2.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 3s;
+}
+#img-wrapper4 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/mazda-cx-8.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 3s;
+}
+#img-wrapper5 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/mazda-cx-5.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 3s;
+}
+#img-wrapper6 {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: url("../img/new-mazda6.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    transition: transform 3s;
+}
+#img-wrapper1:hover {
+    transform: scale(1.1, 1.1);
+}
+#img-wrapper2:hover {
+    transform: scale(1.1, 1.1);
+}
+#img-wrapper3:hover {
+    transform: scale(1.1, 1.1);
+}
+#img-wrapper4:hover {
+    transform: scale(1.1, 1.1);
+}
+#img-wrapper5:hover {
+    transform: scale(1.1, 1.1);
+}
+#img-wrapper6:hover {
+    transform: scale(1.1, 1.1);
+}
+a {
+    margin: 0;
+    padding: 0;
+}
+.name-car {
+    color: #101010;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 550;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+}
+.property {
+    color: #101010;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+}
+.shopping {
+    background-color: #d5d5d5;
+    padding: 35px 0 40px;
+    margin-top: 0;
+}
+.shopping-header {
+    text-align: center;
+}
+.shopping-header-title {
+    color: #101010;
+    font-size: 1.25rem;
+    line-height: 1.75;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.inner-wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    padding: 30px 0;
+}
+.shopping-article {
+    width: 300px;
+    padding: 0 30px;
+}
+.shopping-link {
+    display: block;
+    text-decoration: none;
+    color: #101010;
+}
+.shopping-icon img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+.shopping-title {
+    font-size: 15px;
+    margin-bottom: 15px;
+    letter-spacing: 0.2em;
+    font-weight: 600;
+    line-height: 2.3rem;
+}
+.shopping-content {
+    font-size: 17px;
+    letter-spacing: 0.01em;
+    line-height: 1.75;
+    font-weight: 400;
+    
+}
+.hyperlink {
+    color: #999999;
+    padding: 10px 0px;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    margin-top: 10px;
+}
+#partition {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.section4 {
+    width: 100%;
+    height: 50vw;
+    background-image: url("../img/service-11-min.jpg");
+    background-size: 100% 100%;
+    position: relative;
+}
+.section4-re {
+    display: none;
+    text-align: center;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.section4-re>h1 {
+    letter-spacing: 0.2em;
+    font-weight: 550;
+}
+.section4-re>p {
+    width: 60%;
+    font-size: 17px;
+    line-height: 2em;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.section4-re>.content-bottom {
+    margin: 0 auto;
+}
+.services {
+    position: absolute;
+    top: 250px;
+    left: 67%;
+    right: 80px;
+}
+#content-top {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+#content-center {
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 2em;
+    margin-bottom: 15px;
+}
+.content-bottom {
+    width: 150px;
+    height: 50px;
+    background-color: #999999;
+    color: #101010;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 15px;
+    letter-spacing: 0.1em;
+}
+.content-bottom:hover {
+    background-color: #d9d9d9;
+}
+.link-service {
+    color: #999999;
+    font-size: 17px;
+}
+.link-service:hover {
+    text-decoration: none;
+}
+footer {
+    background-color: #2b2b2b;
+    color: #999999;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.footer1 {
+    width: 350px;
+    margin-right: 20px;
+}
+.footer1>p {
+    font-size: 13px;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+}
+.footer-title {
+    color: #FFFFFF;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+}
+.san-pham {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    line-height: 2em;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+#dich-vu {
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.link-mxh>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#ytb {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.app-mazda-service {
+    display: flex;
+}
+.qr-app-mazda>img {
+    width: 70%;
+}
+.appstore-ggplay {
+    display: block;
+    height: 35px;
+    margin-left: -20px;
+}
+.ggplay {
+    margin-top: 0px;
+}
+.appstore {
+    margin-top: 15px;
+}
+@media only screen and (max-width: 1200px) {
+    header {
+        justify-content: space-between;
+    }
+    #logo {
+        margin-right: auto;
+        margin-left: 5px;
+    }
+    #link-left {
+        margin-left: 5px;
+    }
+    .section1 {
+        justify-content: space-between;
+    }
+    .border {
+        margin-left: auto;
+    }
+    
+}
+@media only screen and (max-width: 1100px) {
+    .services {
+        display: none
+    }
+    .section4-re {
+        display: block;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .article-overview {
+        width: calc(100%/2);
+    }
+    .top-title, #bottom-title {
+        display: none;
+    }
+    .appstore-ggplay {
+        height: 30px;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .inner-wrapper {
+        flex-wrap: wrap;
+    }
+    .shopping-article {
+        width: calc(100%/2);
+    }
+}
+@media only screen and (max-width: 950px) {
+    #section1 {
+        display: none;
+    }
+    footer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #dich-vu {
+        margin-left: 0;
+    }
+    .footer1 {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .appstore-ggplay {
+        height: 25px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    footer {
+        justify-content: space-between;
+    }
+    
+}
+@media only screen and (max-width: 595px) {
+    .appstore-ggplay {
+        width: 11vh;
+    }
+    .model-san-pham>div {
+        display: block;
+    }
+    .chi-tiet-san-pham {
+        width: 100%;
+    }
+    #section2 {
+        display: block;
+    }
+    .article-overview {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .appstore-ggplay {
+        width: 8vh;
+    }
+    .inner-wrapper {
+        display: block;
+    }
+    .shopping-article {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
+    footer {
+        display: block;
+    }
+    .footer1 {
+        width: 100%;
+    }
+    #dich-vu {
+        margin-left: 0px;
+    }
+    .appstore-ggplay {
+        height: 40px;
+        width: 20vh;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #logo {
+        margin-left: 0px;
+    }
+}
+@media only screen and ( min-width:1025px) {
+    #menu {
+        display: none;
+    }
+    
+}
+
+
