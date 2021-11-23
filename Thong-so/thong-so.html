@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CÁC PHIÊN BẢN VÀ THÔNG SỐ NEW MAZDA CX-8 | MAZDA VIỆT NAM</title>
+    <link rel="stylesheet" href="thongso.css">
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <img id="logo" src="img/logo.png">
+            </a>
+        </div>
+        <div>
+            <div class="top-title">
+                <a class="uu-dai" href="#">Ưu đãi</a><a class="title" href="#">Giá xe</a><a class="title" href="#">Trả góp</a><a class="title" href="#">Tìm đại lý</a><a class="title" href="#">Liên hệ</a><a class="lai-thu" href="#">Lái thử</a>
+            </div>
+            <div id="bottom-title">
+                <a id="bt-50" href="#">ALL-NEW MAZDA BT50</a><a class="title2" href="#" onclick="sanphamDropdown()">SẢN PHẨM</a><a class="title2" href="#">MUA XE</a><a class="title2" href="#">DỊCH VỤ</a><a class="title2" href="#">TIN TỨC</a><a id="thuong-hieu" href="#">THƯƠNG HIỆU</a>
+            </div>
+        </div>
+        <div id="menu">
+            <button onclick="sanphamDropdown()" class="menu-dropdown">SẢN PHẨM</button>
+            <p class="partition">|</p>
+            <button onclick="menuDropdown()" class="menu-dropdown">MENU</button>
+        </div>
+        <div class="menu-hover">
+            <p>OTHER LINKS</p>
+            <div class="menu-hover-top-title">
+                <a class="uu-dai" href="#">ƯU ĐÃI</a>
+                <a class="title" href="#">GIÁ XE</a>
+                <a class="title" href="#">TRẢ GÓP</a>
+                <a class="title" href="#">TÌM ĐẠI LÝ</a>
+                <a class="title" href="#">LIÊN HỆ</a>
+                <a class="lai-thu" href="#">LÁI THỬ</a>
+            </div>
+            <a class="bottom-title-menu-hover" href="#">ALL-NEW MAZDA BT-50</a>
+            <hr/>
+            <a class="bottom-title-menu-hover" href="#">MUA XE</a>
+            <hr/>
+            <a class="bottom-title-menu-hover" href="#">DỊCH VỤ</a>
+            <hr/>
+            <a class="bottom-title-menu-hover" href="#">TIN TỨC</a>
+            <hr/>
+            <a class="bottom-title-menu-hover" href="#">THƯƠNG HIỆU</a>
+        </div>
+        <div class="san-pham-hover">
+            <div class="loc-chung-loai">
+                <a href="#">Tất cả</a>
+                <a href="#" style="margin-left: 10px; margin-right: 10px;">SUV</a>
+                <a href="#" style="margin-left: 10px; margin-right: 10px;">Sedan</a>
+                <a href="#" style="margin-left: 10px; margin-right: 10px;">Sport</a>
+                <a href="#" style="margin-left: 10px; margin-right: 10px;">Bán tải</a>
+            </div>
+            <div class="model-san-pham">
+                <div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="../Dac-trung/dac-trung-cx5.html" target="_blank">
+                            <p>NEW MAZDA CX-5</p>
+                            <img src="img/new-mazda-cx-5.jpg" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="thong-so.html">
+                            <p>MAZDA CX-8</p>
+                            <img src="img/mazda-cx-8-min.png" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="#">
+                            <p>MAZDA CX-3</p>
+                            <img src="img/1.png" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="#">
+                            <p>MAZDA CX-30</p>
+                            <img src="img/cx-30.png" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="#">
+                            <p>NEW MAZDA2</p>
+                            <img src="img/new-mazda2-min.png" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="#">
+                            <p>ALL-NEW MAZDA3</p>
+                            <img src="img/all-new-mazda3-min.png" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="#">
+                            <p>NEW MAZDA6</p>
+                            <img src="img/new-mazda6.png" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="#">
+                            <p>MAZDA6</p>
+                            <img src="img/mazda6-min.jpg" style="width: 85%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="#">
+                            <p>NEW MAZDA2</p>
+                            <img src="img/new-mazda2-min.png" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="../Gioi-thieu-xe/gioi-thieu.html" target="_blank">
+                            <p>ALL-NEW MAZDA3 SPORT</p>
+                            <img src="img/all-new-mazda3-sport-min.png" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                </div>
+                <hr/>
+                <div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="#">
+                            <p>MAZDA BT-50</p>
+                            <img src="img/mazda-bt-50-min.png" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                    <div class="chi-tiet-san-pham">
+                        <a href="#">
+                            <p>ALL-NEW MAZDA BT-50</p>
+                            <img src="img/hinh-4.png" style="width: 90%;">
+                        </a>
+                        <div class="link-lienhe-laithu">
+                            <a href="#" style="display: block;">Liên hệ</a>
+                            <a href="#" style="display: block;">Đăng kí lái thử</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <section id="section1">
+        <div id="link-left">
+            <a class="menu-2" href="#">MAZDA CX-8</a>
+        <span class="partition2">|</span>
+        <a class="menu-2" href="#">CÁC PHIÊN BẢN & THÔNG SỐ</a>
+        <span class="partition2">|</span>
+        <a class="menu-2" href="#">CÁC ĐẶC TRƯNG</a>
+        <span class="partition2">|</span>
+        <a class="menu-2" href="#">HÌNH ẢNH</a>
+        </div>
+        <div class="border">
+            <a class="bao-gia" href="#">NHẬN BÁO GIÁ</a>
+        </div>
+    </section>
+    <section id="section1-re" onclick="dactrungCx5()">
+        <p>CÁC ĐẶC TRƯNG NEW MAZDA CX-5</p>
+        <div class="dropdown-cacdactrung">
+            <div>
+                <a class="menu-2" style="display: block;" href="#">NEW MAZDA CX-5</a>
+            <a class="menu-2" style="display: block;" href="#">CÁC PHIÊN BẢN & THÔNG SỐ</a>
+            <a class="menu-2" style="display: block;" href="#">CÁC ĐẶC TRƯNG</a>
+            <a class="menu-2" style="display: block;" href="#">HÌNH ẢNH</a>
+            </div>
+            <div class="border">
+                <a class="bao-gia" href="#">NHẬN BÁO GIÁ</a>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <h1>CÁC PHIÊN BẢN & THÔNG SỐ</h1>
+        <p>Giới thiệu các phiên bản và thông số cụ thể</p>
+    </section>
+    <section class="section3">
+        <h1>CÁC PHIÊN BẢN CỦA MAZDA CX-8</h1>
+        <div class="cac-phien-ban-cx8">
+            <button class="cx8 deluxe" onclick="deluxe()">
+                <img src="img/mazda-cx-8-500x300.png">
+                <p class="car-name">MAZDA CX-8 2.5L DELUXE</p>
+                <p class="gia-phien-ban-cx8">999.000.000 VNĐ</p>
+            </button>
+            <button class="cx8 luxury" onclick="luxury()">
+                <img src="img/mazda-cx-8-500x300.png">
+                <p class="car-name">MAZDA CX-8 2.5L LUXURY</p>
+                <p class="gia-phien-ban-cx8">1.059.000.000 VNĐ</p>
+            </button>
+            <button class="cx8 premium" onclick="premium()">
+                <img src="img/mazda-cx-8-500x300.png">
+                <p class="car-name">MAZDA CX-8 2.5L PREMIUM</p>
+                <p class="gia-phien-ban-cx8">1.169.000.000 VNĐ</p>
+            </button>
+            <button class="cx8 awd" onclick="premiumAwd()">
+                <img src="img/mazda-cx-8-500x300.png">
+                <p class="car-name">MAZDA CX-8 2.5L PREMIUM AWD</p>
+                <p class="gia-phien-ban-cx8">1.259.000.000 VNĐ</p>
+            </button>
+        </div>
+    </section>
+    <section class="section4">
+        <div class="thong-so">
+            <button onclick="dropdownKtkl()" class="button-dropdown">KÍCH THƯỚC - KHỐI LƯỢNG</button>
+            <button onclick="andropdownKtkl()" class="button-dropdown button-dropdown2">KÍCH THƯỚC - KHỐI LƯỢNG</button>
+            <hr/>
+            <div class="dropdown">
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Kích thước tổng thể</div>
+                    <div class="value">4900 x 1840 x 1730</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Chiều dài cơ sở</div>
+                    <div class="value">2930</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Bán kính quay vòng tối thiểu</div>
+                    <div class="value">5.8</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Khoảng sáng gầm xe</div>
+                    <div class="value">200</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Khối lượng không tải</div>
+                    <div class="value">1770</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Khối lượng toàn tải</div>
+                    <div class="value">2365</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Thể tích khoang hành lý</div>
+                    <div class="value"></div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Dung tích thùng nhiên liệu</div>
+                    <div class="value">72</div>
+                </div>
+            </div>
+        </div>
+        <div class="thong-so">
+            <button onclick="dropdownDchs()" class="button-dropdown">ĐỘNG CƠ - HỘP SỐ</button>
+            <button onclick="andropdownDchs()" class="button-dropdown button-dropdown2">ĐỘNG CƠ - HỘP SỐ</button>
+            <hr/>
+            <div class="dropdown">
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Loại động cơ</div>
+                    <div class="value">Skyactiv-G 2.5L</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống nhiên liệu</div>
+                    <div class="value"></div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Dung tích xi lanh</div>
+                    <div class="value"></div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Công suất tối đa</div>
+                    <div class="value">188/6000</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Mô men xoắn cực đại</div>
+                    <div class="value">252/4000</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hộp số</div>
+                    <div class="value">6AT</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Chế độ thể thao</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống kiểm soát gia tốc (GVC)</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hệ thống ngừng/khởi động thông minh</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thong-so">
+            <button onclick="dropdownKg()" class="button-dropdown">KHUNG GẦM</button>
+            <button onclick="andropdownKg()" class="button-dropdown button-dropdown2">KHUNG GẦM</button>
+            <hr/>
+            <div class="dropdown">
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hệ thống treo trước</div>
+                    <div class="value">McPherson / McPherson Struts</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống treo sau</div>
+                    <div class="value">Liên kết đa điểm / Multi-link</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hệ thống dẫn động</div>
+                    <div class="value">Cầu trước / FWD</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống phanh trước</div>
+                    <div class="value">Đĩa / Disc</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hệ thống phanh sau</div>
+                    <div class="value">Đĩa / Disc</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống trợ lực lái</div>
+                    <div class="value">Tay lái trợ lực điện / Electric Power-Assisted Steering</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Kích thước lốp xe</div>
+                    <div class="value">225 / 65R17</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Đường kính mâm xe</div>
+                    <div class="value">Hợp kim 17" / 17" Alloy Wheels</div>
+                </div>
+            </div>
+        </div>
+        <div class="thong-so">
+            <button onclick="dropdownNgoaithat()" class="button-dropdown">NGOẠI THẤT</button>
+            <button onclick="andropdownNgoaithat()" class="button-dropdown button-dropdown2">NGOẠI THẤT</button>
+            <hr/>
+            <div class="dropdown">
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Đèn chiếu gần</div>
+                    <div class="value">LED</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Đèn chiếu xa</div>
+                    <div class="value">LED</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Đèn LED chạy ban ngày</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Đèn trước tự động bật/tắt</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Đèn trước tự động cân bằng góc chiếu</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Gương chiếu hậu ngoài gập điện/chỉnh điện</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Chức năng gạt mưa tự động</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Cụm đèn sau dạng LED</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Cửa sổ trời</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Ống xả kép</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thong-so">
+            <button onclick="dropdownNoithat()" class="button-dropdown">NỘI THẤT</button>
+            <button onclick="andropdownNoithat()" class="button-dropdown button-dropdown2">NỘI THẤT</button>
+            <hr/>
+            <div class="dropdown">
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Chất liệu nội thất(Da)</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Ghế lái điều chỉnh điện</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Ghế lái có nhớ vị trí</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Ghế phụ điều chỉnh điện</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">DVD Player</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Màn hình cảm ứng</div>
+                    <div class="value">7"</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Kết nối AUX, USB, bluetooth</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Số loa</div>
+                    <div class="value">6 loa</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Lẫy chuyển số</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Phanh tay điện tử</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Giữ phanh tự động</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Khởi động bằng nút bấm</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Ga tự động</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Điều hòa tự động</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Cửa gió hàng ghế sau</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Cửa sổ chỉnh điện</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Gương chiếu hậu trung tâm chóng chói tự động</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Màn hình hiển thị tốc độ HUD</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Rèm che nắng kính sau chỉnh điện</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Rèm che nắng cửa sổ hàng ghế sau</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Tựa tay hàng ghế sau</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Tựa tay hàng ghế sau tích hợp cổng USB</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hàng ghế thứ hai gập theo tỉ lệ 60:40</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thong-so">
+            <button onclick="dropdownAntoan()" class="button-dropdown">AN TOÀN</button>
+            <button onclick="andropdownAntoan()" class="button-dropdown button-dropdown2">AN TOÀN</button>
+            <hr/>
+            <div class="dropdown">
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Số túi khí</div>
+                    <div class="value">6</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống chống bó cứng phanh ABS</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hệ thống phân bổ lực phanh điện tử EBD</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống hỗ trợ lực phanh khẩn cấp EBA</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hệ thống cảnh báo phanh khẩn cấp ESS</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống cân bằng điện tử DSC</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hệ thống kiểm soát lực kéo chống trượt TCS</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống hỗ trợ khởi hành ngang dốc HLA</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Mã hóa chống sao chép chìa khóa</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Cảnh báo chống trộm</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Camera lùi</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Cảm biến cảnh báo va chạm phía sau</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Cảm biến cảnh báo va chạm phía trước</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Camera quan sát 360 độ</div>
+                    <div class="value">-</div>
+                </div>
+            </div>
+        </div>
+        <div class="thong-so">
+            <button onclick="dropdownIactivsense()" class="button-dropdown">I-ACTIVSENSE</button>
+            <button onclick="andropdownIactivsense()" class="button-dropdown button-dropdown2">I-ACTIVSENSE</button>
+            <hr/>
+            <div class="dropdown">
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hệ thống mở rộng góc chiếu đèn trước theo hướng lái AFS</div>
+                    <div class="value">
+                        <img src="img/true.png">
+                    </div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống tự động điều chỉnh chế độ đèn chiếu xa HBC</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hệ thống đèn thích ứng thông minh ALH</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Cảnh báo phương tiện cắt ngang khi lùi RCTA</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Cảnh báo chệch làn LDW</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hỗ trợ giữ làn LAS</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hỗ trợ phanh thông minh trong thành phố (phía trước)</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hỗ trợ phanh thông minh trong thành phố (phía sau)</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hỗ trợ phanh thông minh SBS</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet chan">
+                    <div class="propertie">Hệ thống điều khiển hành trình kết hợp radar MRCC</div>
+                    <div class="value">-</div>
+                </div>
+                <div class="thong-so-chi-tiet le">
+                    <div class="propertie">Hệ thống nhắc nhở người lái tập trung DAA</div>
+                    <div class="value">-</div>
+                </div>
+            </div>
+        </div>
+        <p>Thông tin & hình ảnh chỉ mang tính chất tham khảo và có thể thay đổi so với sản phẩm thực tế. Quý khách hàng vui lòng liên hệ trực tiếp nhân viên tư vấn để biết thêm thông tin</p>
+    </section>
+    <script type="text/javascript" src="thongso.js"></script>
+    <footer>
+        <div class="footer1">
+            <h1 class="footer-title">CÔNG TY TNHH MTV PHÂN PHỐI Ô TÔ DU LỊCH CHU LAI TRƯỜNG HẢI</h1>
+            <p>Giấy CNDKDN: 400077880 Ngày cấp: 27/10/2010</p>
+            <p>Cơ quan cấp: Phòng đăng kí kinh doanh Sở kế hoạch và đầu tư tỉnh Quảng Nam</p>
+            <p>Địa chỉ: Thôn 4, xã Tam Hiệp, huyện Núi Thành, tỉnh Quảng Nam, Việt Nam</p>
+            <img src="img/bct.png" width="130px">
+            <h2>2021 MAZDA VIỆT NAM</h2>
+        </div>
+        <div>
+            <h1 class="footer-title">SẢN PHẨM</h1>
+            <a class="san-pham" href="#">New Mazda2</a>
+            <a class="san-pham" href="#">New mazda2 Sport</a>
+            <a class="san-pham" href="#">All-New Mazda3</a>
+            <a class="san-pham" href="#">All-New Mazda3 Sport</a>
+            <a class="san-pham" href="#">New Mazda6</a>
+            <a class="san-pham" href="#">Mazda6</a>
+            <a class="san-pham" href="#">New Mazda CX-5</a>
+            <a class="san-pham" href="#">Mazda CX-8</a>
+            <a class="san-pham" href="#">Mazda BT-50</a>
+        </div>
+        <div id="dich-vu">
+            <h1 class="footer-title">DỊCH VỤ</h1>
+            <a class="san-pham" href="#">Dịch vụ sau bán hàng</a>
+            <a class="san-pham" href="#">Phụ tùng - phụ kiện</a>
+            <a class="san-pham" href="#">Chăm sóc khách hàng</a>
+            <a class="san-pham" href="#">Đặt hẹn dịch vụ</a>
+            <h1 class="footer-title">CHÍNH SÁCH</h1>
+            <a class="san-pham" href="#">Chính sách thanh toán</a>
+            <a class="san-pham" href="#">Chính sách bảo mật</a>
+            <a class="san-pham" href="#">Chính sách giao nhận - vận chuyển</a>
+        </div>
+        <div class="footer4">
+            <h1 class="footer-title">LIÊN HỆ VỚI CHÚNG TÔI</h1>
+            <a class="san-pham" href="tel:1900545591">Hotline: 1900545591</a>
+            <a class="san-pham" href="mailto:cskh@thaco.com.vn">cskh@thaco.com.vn</a>
+            <a class="link-mxh" href="https://www.facebook.com/mazdamotors.vn/" target="_blank">
+            <img src="img/fbsquare.png"></a>
+            <a class="link-mxh" id="ytb" href="https://www.youtube.com/user/mazdavietnam" target="_blank">
+            <img src="img/ytbsquare.png"></a>
+            <a class="link-mxh" href="https://www.instagram.com/mazdavnofficial/" target="_blank">
+            <img src="img/insta-icon.png"></a>
+            <hr/>
+            <h1 class="footer-title">TẢI ỨNG DỤNG MAZDA SERVICE</h1>
+            <div class="app-mazda-service">
+                <div class="qr-app-mazda">
+                    <img src="img/mazda-service-app.png">
+                </div>
+                <div>
+                    <a href="https://play.google.com/store/apps/details?id=vn.com.thaco.mymazda" target="_blank">
+                        <img class="appstore-ggplay ggplay" src="img/ggplay.png">
+                    </a>
+                    <a href="https://apps.apple.com/vn/app/mazda-service/id1460348393" target="_blank">
+                        <img class="appstore-ggplay appstore" src="img/appstore.png">
+                    </a> 
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

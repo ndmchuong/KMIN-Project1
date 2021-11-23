@@ -1,0 +1,606 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Calibri;
+    margin: 0;
+}
+hr {
+    opacity: 0.3;
+    margin-bottom: 40px;
+}
+header {
+    width: 100%;
+    height: 75px;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 3;
+    top: 0px;
+}
+#logo {
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 400px;
+}
+.title {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #999999;
+    text-decoration: none;
+}
+.title2 {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #d5d5d5;
+    text-decoration: none;
+}
+.uu-dai {
+    color: #999999;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.lai-thu {
+    color: #999999;
+    text-decoration: none;
+    margin-left: 10px;
+}
+#bt-50 {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #d5d5d5;
+}
+#thuong-hieu {
+    text-decoration: none;
+    color: #d5d5d5;
+
+}
+.title:hover {
+    color: white;
+}
+.uu-dai:hover {
+    color: white;
+}
+.lai-thu:hover {
+    color: white;
+}
+.title2:hover {
+    color: white;
+}
+#bt-50:hover {
+    color: white;
+}
+#thuong-hieu:hover {
+    color: white;
+}
+.top-title {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+#bottom-title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+}
+#menu {
+    display: flex;
+    margin-right: 20px;
+    margin-top: 8px;
+    color: #999999;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+.partition {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.menu-dropdown {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    display: block;
+    border: none;
+    background-color: #2b2b2b;
+    margin-bottom: 10px;
+}
+.menu-hover {
+    text-align: center;
+    height: 400px;
+    width: 100%;
+    background-color: #d9d9d9;
+    overflow: scroll;
+    display: none;
+    position: absolute;
+    top: 75px;
+    z-index: 3;
+    animation-name: tha-xuong;
+    animation-duration: 1s;
+}
+@keyframes tha-xuong {
+    from {
+        top: -300px;
+    }
+    to {
+        top: 75px;
+    }
+}
+
+.menu-hover>p {
+    color: #999999;
+}
+.menu-hover-top-title {
+    margin-bottom: 30px;
+}
+.bottom-title-menu-hover {
+    display: block;
+    text-decoration: none;
+    line-height: 4em;
+    color: #999999;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+}
+.bottom-title-menu-hover:hover {
+    color: #2b2b2b;
+}
+.san-pham-hover {
+    width: 100%;
+    height: 500px;
+    display: none;
+    overflow: scroll;
+    position: absolute;
+    top: 75px;
+    z-index: 3;
+    animation-name: tha-xuong;
+    animation-duration: 1s;
+    background-color: #FFFFFF;
+}
+.loc-chung-loai {
+    height: 50px;
+    background-color: #101010;
+    padding-top: 10px;
+}
+.loc-chung-loai>a {
+    color: #d5d5d5;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.model-san-pham>div {
+    display: flex;
+}
+.model-san-pham>hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.chi-tiet-san-pham {
+    width: calc(100%/4);
+}
+.chi-tiet-san-pham>a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+.chi-tiet-san-pham>a>p {
+    text-align: center;
+}
+.link-lienhe-laithu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+    
+}
+.link-lienhe-laithu>a {
+    text-decoration: none;
+    color: #999999;
+}
+.link-lienhe-laithu>a:hover {
+    color: black;
+}
+.dropdown-cacdactrung {
+    display: none;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    text-align: center;
+    animation-name: tha-xuong2;
+    animation-duration: 1s;
+}
+.dropdown-cacdactrung>.border {
+    margin-top: 20px;
+    width: 40%;
+    margin: 20px auto;
+}
+@keyframes tha-xuong2 {
+    from {
+        top: -230px;
+    }
+    to {
+        top: 60px;
+    }
+}
+.hienthi {
+    display: block;
+}
+#section1 {
+    height: 60px;
+    width: 100%;
+    padding-top: 5px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 75px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+#section1-re {
+    height: 60px;
+    width: 100%;
+    background-color: #FFFFFF;
+    letter-spacing: 0.1em;
+    font-family: "MazdaType";
+    position: fixed;
+    top: 75px;
+    padding-left: 10px;
+    z-index: 2;
+}
+#link-left {
+    margin-top: 13px;
+}
+.menu-2 {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.17em;
+    color: #999999;
+    margin-top: 30px;
+}
+.menu-2:hover {
+    color: black;
+}
+.partition2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.border {
+    display: block;
+    border: solid 2px black;
+    padding: 14px 24px;
+    width: 170px;
+    height: 50px;
+    margin-left: 320px;
+}
+.border:hover {
+    background-color: #999999;
+    border: #999999;
+}
+.bao-gia {
+    text-decoration: none;
+    color: #999999;
+    font-weight: 700;
+}
+.bao-gia:hover {
+    color: #FFFFFF;
+}
+.section2 {
+    width: 100%;
+    height: 210px;
+    margin-top: 130px;
+    margin-bottom: 70px;
+    padding-top: 40px;
+    background-image: url("img/serviceheroshortwide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.section2>h1 {
+    font-size: 27px;
+    color: #fff;
+    letter-spacing: 0.25em;
+    font-weight: 600;
+}
+.section2>p {
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+.section3 {
+    text-align: center;
+    margin-top: 10px;
+    position: sticky;
+    top: 73px;
+    z-index: 1;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.section3>h1 {
+    font-size: 25px;
+    font-weight: inherit;
+}
+.cac-phien-ban-cx8 {
+    height: 160px;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+.cx8 {
+    display: inline-block;
+    border: none;
+    background-color: #fff;
+    opacity: 0.5;
+}
+.cx8:hover {
+    opacity: 1;
+}
+.deluxe {
+    opacity: 1;
+}
+.cx8>img {
+    width: 175px;
+    height: 100px;
+}
+.car-name {
+    line-height: 0;
+    margin-top: 0px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.gia-phien-ban-cx8 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #a8a7a7;
+}
+.section4 {
+    width: 1150px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.section4>p {
+    font-size: 18px;
+    letter-spacing: 0.1;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.thong-so>button {
+    border: none; 
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 550;
+}
+.button-dropdown {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+.dropdown {
+    margin-bottom: 40px;
+}
+.dropdown,
+.button-dropdown2 {
+    display: none;
+}
+.thong-so-chi-tiet {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.3;
+}
+.propertie {
+    margin-left: 20px;
+    width: 350px;
+    font-size: 17px;
+}
+.value {
+    width: 300px;
+    margin-right: 36%;
+    text-align: center;
+    font-size: 18px;
+}
+.value>img {
+    width: 10px;
+}
+.chan {
+    background-color: #e4e2e2;
+}
+footer {
+    background-color: #2b2b2b;
+    color: #999999;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.footer1 {
+    width: 350px;
+    margin-right: 20px;
+}
+.footer1>p {
+    font-size: 13px;
+    line-height: 2em;
+    letter-spacing: 0.1em;
+}
+.footer-title {
+    color: #FFFFFF;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+}
+.san-pham {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+    line-height: 2em;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+#dich-vu {
+    margin-left: 100px;
+    margin-right: 20px;
+}
+.link-mxh>img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#ytb {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.app-mazda-service {
+    display: flex;
+}
+.qr-app-mazda>img {
+    width: 70%;
+
+}
+.appstore-ggplay {
+    display: block;
+    width: 20vh;
+    height: 35px;
+    margin-left: -20px;
+}
+.ggplay {
+    margin-top: 0px;
+}
+.appstore {
+    margin-top: 15px;
+}
+
+@media only screen and (max-width: 1200px) {
+    header {
+        justify-content: space-between;
+    }
+    #logo {
+        margin-right: auto;
+        margin-left: 5px;
+    }
+    #link-left {
+        margin-left: 5px;
+    }
+    .section1 {
+        justify-content: space-between;
+    }
+    .border {
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .section4 {
+        width: 800px;
+    }
+}
+@media only screen and ( max-width:1024px ) {
+    .top-title, #bottom-title {
+        display: none;
+    }
+    .appstore-ggplay {
+        width: 13vh;
+        height: 30px;
+    }
+}
+@media only screen and (max-width: 950px) {
+    #section1 {
+        display: none;
+    }
+    footer {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #dich-vu {
+        margin-left: 0;
+    }
+    .footer1 {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .section4 {
+        width: 100%;
+    }
+    .value {
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 700px) {
+    footer {
+        justify-content: space-between;
+    }
+    .propertie {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 595px) {
+    .appstore-ggplay {
+        width: 11vh;
+    }
+    .model-san-pham>div {
+        display: block;
+    }
+    .chi-tiet-san-pham {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .appstore-ggplay {
+        width: 8vh;
+    }
+}
+@media only screen and (max-width: 500px) {
+    footer {
+        display: block;
+    }
+    .footer1 {
+        width: 100%;
+    }
+    #dich-vu {
+        margin-left: 0px;
+    }
+    .appstore-ggplay {
+        height: 40px;
+        width: 20vh;
+    }
+    .border {
+        height: auto;
+    }
+    .dropdown-cacdactrung>.border {
+        width: 80%;
+    }
+    .propertie {
+        width: 100px;
+        margin-left: 10px;
+    }
+    .value {
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #logo {
+        margin-left: 0px;
+    }
+}
+@media only screen and (min-width: 970px) {
+    #section1-re {
+        display: none;
+    }
+}
+@media only screen and ( min-width:1025px) {
+    #menu {
+        display: none;
+    }
+    
+}

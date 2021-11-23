@@ -3,7 +3,7 @@
 }
 body {
     margin: 0;
-    font-family: Tahoma;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 header {
     width: 100%;
@@ -73,31 +73,31 @@ header {
     color: white;
 }
 .top-title {
-    margin-top: 12px;
+    margin-top: 10px;
     text-align: right;
-    font-size: 13px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
     letter-spacing: 0.2em;
 }
 #bottom-title {
     margin-bottom: 10px;
     margin-top: 10px;
-    font-size: 14px;
-    font-weight: 550;
+    font-size: 15px;
+    font-weight: 700;
     letter-spacing: 0.2em;
 }
 #menu {
     display: flex;
     margin-right: 20px;
-    margin-top: 10px;
+    margin-top: 8px;
     color: #999999;
     font-size: 17px;
     font-weight: 600;
     letter-spacing: 0.1em;
 }
 .partition {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .menu-dropdown {
     color: #999999;
@@ -203,315 +203,249 @@ header {
 .link-lienhe-laithu>a:hover {
     color: black;
 }
+.dropdown-cacdactrung {
+    display: none;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    background-color: #FFFFFF;
+    z-index: 1;
+    text-align: center;
+    animation-name: tha-xuong2;
+    animation-duration: 1s;
+}
+.dropdown-cacdactrung>.border {
+    margin-top: 20px;
+    width: 40%;
+    margin: 20px auto;
+}
+@keyframes tha-xuong2 {
+    from {
+        top: -230px;
+    }
+    to {
+        top: 60px;
+    }
+}
 .hienthi {
     display: block;
 }
-#bg-image {
+#section1 {
+    height: 60px;
     width: 100%;
-    height: calc(100vw/3.2);
-    margin-top: 70px;
-    background-image: url("../img/line-up-02-1.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    animation-name: image-mazda;
-    animation-duration: 20s;
-    animation-delay: 3s;
-    animation-iteration-count: infinite;
-}
-@keyframes image-mazda {
-    0% {
-        background-image: url("../img/line-up-02-1.jpg");
-    }
-    20% {
-        background-image: url("../img/all-new-mazda3-sport_pc1.jpg");
-    }
-    40% {
-        background-image: url("../img/banner-web-05.jpg");
-    }
-    60% {
-        background-image: url("../img/banner-web-06.jpg");
-    }
-    80% {
-        background-image: url("../img/banner-web-07.jpg");
-    }
-    100% {
-        background-image: url("../img/line-up-02-1.jpg");
-    }
-
-}
-
-#section2 {
-    position: relative;
-    z-index: 1;
+    padding-top: 5px;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 75px;
     display: flex;
-    flex-wrap: wrap;
-    padding: 20px 5px 0px 5px;
-    background-color: #e7e7e7;
+    justify-content: center;
+    z-index: 1;
 }
-.article-overview {
-    width: calc(100%/3);
-    padding: 0px 5px;
-    display: block;
+#section1-re {
+    height: 60px;
+    width: 100%;
+    background-color: #FFFFFF;
+    letter-spacing: 0.1em;
+    font-family: "MazdaType";
+    position: fixed;
+    top: 75px;
+    padding-left: 10px;
+    z-index: 1;
 }
-
-
-
-.link-overview {
-    text-align: center;
+#link-left {
+    margin-top: 13px;
+}
+.menu-2 {
     text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.17em;
+    color: #999999;
+    margin-top: 30px;
+}
+.menu-2:hover {
+    color: black;
+}
+.partition2 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.border {
     display: block;
+    border: solid 2px black;
+    padding: 12px 22px;
+    width: 170px;
+    height: 50px;
+    margin-left: 275px;
 }
-.img-text-overview {
-    height: 450px;
-    overflow: hidden;
-    position: relative;
+.border:hover {
+    background-color: #999999;
+    border: #999999;
 }
-.img-text-overview2 {
-    height: 120px;
+.bao-gia {
+    text-decoration: none;
+    color: #999999;
+    font-weight: 600;
 }
-#img-wrapper1 {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-image: url("../img/all-new-mazda3.jpg");
-    background-position: center center;
-    background-size: cover;
+.bao-gia:hover {
+    color: #FFFFFF;
+}
+#section2 {
     width: 100%;
-    height: 100%;
-    transition: transform 3s;
+    height: 350px;
+    background-color: #2b2b2b;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
-#img-wrapper2 {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-image: url("../img/all-new-mazda3-sport.jpg");
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    transition: transform 3s;
-}
-#img-wrapper3 {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-image: url("../img/new-mazda2.jpg");
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    transition: transform 3s;
-}
-#img-wrapper4 {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-image: url("../img/mazda-cx-8.jpg");
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    transition: transform 3s;
-}
-#img-wrapper5 {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-image: url("../img/mazda-cx-5.jpg");
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    transition: transform 3s;
-}
-#img-wrapper6 {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-image: url("../img/new-mazda6.jpg");
-    background-position: center center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    margin-top: 0px;
-    transition: transform 3s;
-}
-#img-wrapper1:hover {
-    transform: scale(1.1, 1.1);
-}
-#img-wrapper2:hover {
-    transform: scale(1.1, 1.1);
-}
-#img-wrapper3:hover {
-    transform: scale(1.1, 1.1);
-}
-#img-wrapper4:hover {
-    transform: scale(1.1, 1.1);
-}
-#img-wrapper5:hover {
-    transform: scale(1.1, 1.1);
-}
-#img-wrapper6:hover {
-    transform: scale(1.1, 1.1);
-}
-a {
-    margin: 0;
-    padding: 0;
-}
-.name-car {
-    color: #101010;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    font-weight: 550;
-    font-size: 18px;
+#st2-top {
+    color: #FFFFFF;
     letter-spacing: 0.2em;
+    margin-top: 30px;
 }
-.property {
-    color: #101010;
+#st2-center {
+    color: #FFFFFF;
     font-size: 17px;
-    font-weight: 400;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    line-height: 30px;
+}
+.st2-bottom {
+    color: #999999;
+    font-size: 18px;
     letter-spacing: 0.1em;
 }
-.shopping {
-    background-color: #d5d5d5;
-    padding: 35px 0 40px;
-    margin-top: 0;
+.st2-bottom:hover {
+    color: black;
 }
-.shopping-header {
+#cong-nghe {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+#van-hanh {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.design-performance {
+    width: 100%;
+    height: 100px;
     text-align: center;
-}
-.shopping-header-title {
-    color: #101010;
-    font-size: 1.25rem;
-    line-height: 1.75;
+    font-size: 20px;
     letter-spacing: 0.2em;
-    font-weight: 700;
-    margin-bottom: 0;
 }
 .inner-wrapper {
     display: flex;
-    justify-content: center;
-    max-width: 1200px;
+    overflow: hidden;
     width: 100%;
-    margin: 0px auto;
+}
+.inner-wrapper-imgcontent {
+    width: calc(100%/3);
+}
+.container-img-cx5 {
+    overflow: hidden;
+    width: 97%;
+}
+.img-cx5 {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 450px;
+    transition: transform 3s;
+   
+}
+.h1-wrapper {
+    font-size: 18px;
+    width: 90%;
+    margin: auto;
+    margin-top: 25px;
     text-align: center;
-    padding: 30px 0;
-}
-.shopping-article {
-    width: 300px;
-    padding: 0 30px;
-}
-.shopping-link {
-    display: block;
-    text-decoration: none;
-    color: #101010;
-}
-.shopping-icon img {
-    height: 100px;
-    margin-bottom: 20px;
-}
-.shopping-title {
-    font-size: 15px;
-    margin-bottom: 15px;
     letter-spacing: 0.2em;
-    font-weight: 600;
-    line-height: 2.3rem;
-}
-.shopping-content {
     font-size: 17px;
-    letter-spacing: 0.01em;
-    line-height: 1.75;
-    font-weight: 400;
-    
 }
-.hyperlink {
-    color: #999999;
-    padding: 10px 0px;
-    letter-spacing: 0.2em;
-    font-weight: 700;
-    font-size: 0.8125rem;
+.p-wrapper {
+    width: 90%;
+    margin: auto;
     margin-top: 10px;
-}
-#partition {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-
-.section4 {
-    width: 100%;
-    height: 50vw;
-    background-image: url("../img/service-11-min.jpg");
-    background-size: 100% 100%;
-    position: relative;
-}
-.section4-re {
-    display: none;
+    margin-bottom: 50px;
     text-align: center;
-    width: 100%;
-    margin-top: 70px;
-    margin-bottom: 70px;
-}
-.section4-re>h1 {
-    letter-spacing: 0.2em;
-    font-weight: 550;
-}
-.section4-re>p {
-    width: 60%;
-    font-size: 17px;
-    line-height: 2em;
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-.section4-re>.content-bottom {
-    margin: 0 auto;
-}
-.services {
-    position: absolute;
-    top: 250px;
-    left: 67%;
-    right: 80px;
-}
-#content-top {
-    color: #FFFFFF;
-    font-size: 25px;
-    font-weight: 700;
-    letter-spacing: 0.2em;
-}
-#content-center {
-    color: #FFFFFF;
-    font-size: 17px;
-    line-height: 2em;
-    margin-bottom: 15px;
-}
-.content-bottom {
-    width: 150px;
-    height: 50px;
-    background-color: #999999;
-    color: #101010;
-    text-decoration: none;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 600;
-    padding-top: 15px;
     letter-spacing: 0.1em;
 }
-.content-bottom:hover {
-    background-color: #d9d9d9;
+.img-cx5:hover {
+    transform: scale(1.1, 1.1);
 }
-.link-service {
-    color: #999999;
-    font-size: 17px;
+/*
+*/
+.section4-6 {
+    background-color: #2b2b2b;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
 }
-.link-service:hover {
+.title-st4-6 {
+    width: 100%;
+    height: 116px;
+    padding-top: 20px;
+    text-align: center;
+}
+.title-st4-6>h1 {
+    color: #FFFFFF;
+    font-size: 25px;
+    letter-spacing: 0.2em;
+}
+.img-content-st4-6 {
+    display: flex;
+}
+.img-st4-6 {
+    width: 50%;
+    height: 48vw;
+    position: relative;
+    overflow: hidden;
+}
+.img-st4-6>img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.content-st4-6 {
+    width: 50%;
+    padding-left: 70px ;
+    padding-right: 70px;
+    padding-top: 70px;
+}
+.content-st4-6>h1 {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    margin-bottom: 30px;
+}
+.content-st4-6>p {
+    color: #FFFFFF;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+}
+.content-st4-6>a {
+    display: block;
+    width: 200px;
+    height: 50px;
     text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    padding-top: 10px ;
+    color: #999999;
+    border: solid 2px #999999;
+}
+.content-st4-6>a:hover {
+    color: white;
+    border: solid 2px white;
 }
 footer {
     background-color: #2b2b2b;
@@ -564,9 +498,11 @@ footer {
 }
 .qr-app-mazda>img {
     width: 70%;
+
 }
 .appstore-ggplay {
     display: block;
+    width: 20vh;
     height: 35px;
     margin-left: -20px;
 }
@@ -576,7 +512,14 @@ footer {
 .appstore {
     margin-top: 15px;
 }
+#section6 {
+    background-color: #101010;
+}
 @media only screen and (max-width: 1200px) {
+    .content-st4-6 {
+        padding-top: 0px;
+        padding-left: 20px;
+    }
     header {
         justify-content: space-between;
     }
@@ -593,38 +536,50 @@ footer {
     .border {
         margin-left: auto;
     }
-    
-}
-@media only screen and (max-width: 1100px) {
-    .services {
-        display: none
-    }
-    .section4-re {
-        display: block;
+    #section2 {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 }
-@media only screen and (max-width:1024px) {
-    .article-overview {
-        width: calc(100%/2);
-    }
+@media only screen and ( max-width:1024px ) {
     .top-title, #bottom-title {
         display: none;
     }
+    .section4-6 {
+        height: auto;
+    }
+    .img-content-st4-6 {
+        display: block;
+        padding-bottom: 10px;
+    }
+    .img-st4-6 {
+        width: 100%;
+        height: 80vw;
+    }
+    .content-st4-6 {
+        width: 100%;
+    }
+    #section6 {
+        height: auto;
+        padding-bottom: 20px;
+    }
     .appstore-ggplay {
+        width: 13vh;
         height: 30px;
-    }
-}
-@media only screen and (max-width:1000px) {
-    .inner-wrapper {
-        flex-wrap: wrap;
-    }
-    .shopping-article {
-        width: calc(100%/2);
     }
 }
 @media only screen and (max-width: 950px) {
     #section1 {
         display: none;
+    }
+    .inner-wrapper {
+        display: block;
+    }
+    .inner-wrapper-imgcontent {
+        width: 100%;
+    }
+    .container-img-cx5 {
+        width: 100%;
     }
     footer {
         padding-left: 0px;
@@ -637,18 +592,16 @@ footer {
         width: 30%;
     }
 }
-@media only screen and (max-width: 900px) {
-    .appstore-ggplay {
-        height: 25px;
-    }
-}
-
 @media only screen and (max-width: 700px) {
-    
+    #section2 {
+        height: auto;
+    }
+    .st2-bottom {
+        display: none;
+    }
     footer {
         justify-content: space-between;
     }
-    
 }
 @media only screen and (max-width: 595px) {
     .appstore-ggplay {
@@ -660,22 +613,10 @@ footer {
     .chi-tiet-san-pham {
         width: 100%;
     }
-    #section2 {
-        display: block;
-    }
-    .article-overview {
-        width: 100%;
-    }
 }
 @media only screen and (max-width: 530px) {
     .appstore-ggplay {
         width: 8vh;
-    }
-    .inner-wrapper {
-        display: block;
-    }
-    .shopping-article {
-        width: 100%;
     }
 }
 @media only screen and (max-width: 500px) {
@@ -692,10 +633,25 @@ footer {
         height: 40px;
         width: 20vh;
     }
+    .border {
+        height: auto;
+    }
+    .dropdown-cacdactrung>.border {
+        width: 80%;
+    }
 }
 @media only screen and (max-width: 400px) {
     #logo {
         margin-left: 0px;
+    }
+    #section2 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+@media only screen and (min-width: 970px) {
+    #section1-re {
+        display: none;
     }
 }
 @media only screen and ( min-width:1025px) {
@@ -704,5 +660,3 @@ footer {
     }
     
 }
-
-
